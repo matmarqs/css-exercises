@@ -3,25 +3,39 @@ body {
   font-family: sans-serif;
 }
 
+* {
+  font-size: 16px;  /* everything has font-size 16px */
+}
+
 .card {
   width: 400px;
   background: #fff;
-  margin: 16px auto;
+  margin: 16px auto;  /* already here */
+  padding: 8px; /* 8px gap between edge of the card and the blue sections */
 }
 
 .title {
   background: #e3f4ff;
+  padding: 8px; /* 8px gap between text and edge */
+  margin: 0px; /* top and bottom depend on .card padding and .content margin */
 }
 
 .content {
   background: #e3f4ff;
+  padding: 16px 8px;  /* 16px top and bottom. 8px on either side */
+  margin: 8px auto; /* defines the 8px gap between the blue sections */
 }
 
 .button-container {
   background: #e3f4ff;
+  text-align: center; /* center text */
+  padding: 8px; /* 8px padding */
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  display: block; /* new line */
+  margin: auto; /* center button */
+  padding: 8px 24px;  /* 24px space on the sides, 8px on top and bottom */
 }
