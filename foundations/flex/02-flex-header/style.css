@@ -1,6 +1,10 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;  /* flexbox header (LEFT LOGO RIGHT) */
+  justify-content: space-between; /* center logo, and edge links */
+  align-items: center;  /* center them in cross direction */
+  padding: 10px;  /* padding for the header */
 }
 
 .logo {
@@ -12,14 +16,20 @@
 }
 
 ul {
-  /* this removes the dots on the list items*/
-  list-style-type: none;
+  /* IMPORTANT: */
+  /* <ul></ul> has left padding of 40px and margin top/bottom of 13 px added BY DEFAULT */
+  /* this has a issue to center things. to solve that, remove margin and padding */
+  margin: 0;  /* remove 13px margin top and bottom added by default */
+  padding: 0; /* remove 40px padding-left added by default */
+  list-style-type: none; /* this removes the dots on the list items*/
+  display: flex;  /* flexbox links (ONE TWO THREE), (FOUR FIVE SIX) */
+  gap: 20px;  /* gap between items */
+  justify-content: space-between; /* go to the edge, and have space between */
 }
 
 a {
   font-size: 22px;
   background: white;
   padding: 8px;
-  /* this removes the line under the links */
-  text-decoration: none;
+  text-decoration: none; /* this removes the line under the links */
 }
